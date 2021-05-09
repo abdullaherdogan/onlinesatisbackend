@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MarketDbModelStoreContainer" CdmEntityContainer="MarketDbEntities">
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="MarketDbModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SatisCİnsi">
+      <EntityTypeMapping TypeName="MarketDbModel.SatisCİnsi">
+        <MappingFragment StoreEntitySet="SatisCİnsi">
+          <ScalarProperty Name="SatisCinsiId" ColumnName="SatisCinsiId" />
+          <ScalarProperty Name="SatisCinsi" ColumnName="SatisCinsi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sepet">
+      <EntityTypeMapping TypeName="MarketDbModel.Sepet">
+        <MappingFragment StoreEntitySet="Sepet">
+          <ScalarProperty Name="SepetId" ColumnName="SepetId" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="UyeId" ColumnName="UyeId" />
+          <ScalarProperty Name="UrunMiktar" ColumnName="UrunMiktar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="MarketDbModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="UrunKategoriId" ColumnName="UrunKategoriId" />
+          <ScalarProperty Name="UrunUyeId" ColumnName="UrunUyeId" />
+          <ScalarProperty Name="UrunSatisCinsiId" ColumnName="UrunSatisCinsiId" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunFiyati" ColumnName="UrunFiyati" />
+          <ScalarProperty Name="UrunAciklama" ColumnName="UrunAciklama" />
+          <ScalarProperty Name="UrunStok" ColumnName="UrunStok" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uye">
+      <EntityTypeMapping TypeName="MarketDbModel.Uye">
+        <MappingFragment StoreEntitySet="Uye">
+          <ScalarProperty Name="UyeId" ColumnName="UyeId" />
+          <ScalarProperty Name="UyeYetkiId" ColumnName="UyeYetkiId" />
+          <ScalarProperty Name="UyeAdSoyad" ColumnName="UyeAdSoyad" />
+          <ScalarProperty Name="UyeKullaniciAdi" ColumnName="UyeKullaniciAdi" />
+          <ScalarProperty Name="UyeMail" ColumnName="UyeMail" />
+          <ScalarProperty Name="UyeParola" ColumnName="UyeParola" />
+          <ScalarProperty Name="UyeAdres" ColumnName="UyeAdres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yetki">
+      <EntityTypeMapping TypeName="MarketDbModel.Yetki">
+        <MappingFragment StoreEntitySet="Yetki">
+          <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
+          <ScalarProperty Name="YetkiTuru" ColumnName="YetkiTuru" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

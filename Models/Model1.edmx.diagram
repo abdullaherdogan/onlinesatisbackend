@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="14fd128f7434425cb631af55ceb21a12" Name="Diagram1">
+        <EntityTypeShape EntityType="MarketDbModel.Kategori" Width="1.5" PointX="6" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketDbModel.SatisCİnsi" Width="1.5" PointX="10.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketDbModel.Sepet" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketDbModel.Urun" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketDbModel.Uye" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MarketDbModel.Yetki" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MarketDbModel.FK_Urun_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketDbModel.FK_Urun_SatisCİnsi" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketDbModel.FK_Sepet_Urun" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketDbModel.FK_Sepet_Uye" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketDbModel.FK_Urun_Uye" ManuallyRouted="false" />
+        <AssociationConnector Association="MarketDbModel.FK_Uye_Yetki" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
